@@ -30,6 +30,8 @@
 
     What did you expect? Did you get what you expected? What do you think
    happened?
+
+   //answer: elements are getting copied in the new address of vectors declared
 */
 
 #include <iostream>
