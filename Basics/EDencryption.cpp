@@ -21,5 +21,8 @@ int main() {
   }
   std::cout << "\nEncrypted message: " << message;
 
+  std::cout << "\nPress Enter to exit...";
+  std::cin.get();
+
   return 0;
 }
