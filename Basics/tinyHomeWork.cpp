@@ -10,4 +10,5 @@ int main() {
             << "Total estimate: $" << numberOfRooms * 30 + 3.06
             << "\n========================"
             << "\nEstimate valid for 30 days online";
+  return 0;
 }

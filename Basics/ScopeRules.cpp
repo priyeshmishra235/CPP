@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void local_example();
+void local_example(int);
 void global_example();
 void static_local_example();
 
@@ -53,8 +53,8 @@ int main() {
   global_example();
 
   static_local_example();
-  //    static_local_example();
-  //    static_local_example();
+  static_local_example();
+  static_local_example();
 
   cout << endl;
   return 0;

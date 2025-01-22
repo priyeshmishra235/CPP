@@ -1,15 +1,5 @@
 #include <iostream>
-// Estimate for carpet cleaning service
-// Number of small rooms: 3
-// Number of large rooms: 1
-// Price per small room: $25
-// Price per large room: $35
-// Cost : $110
-// Tax: $6.6
-// Discount: 15%
-//===============================
-// Total estimate: $116.6
-// This estimate is valid for 30 days
+
 int main() {
   std::cout << "Welcome to carpet cleaning service!\nHere you can check charge "
                "estimates."
@@ -36,4 +26,5 @@ int main() {
             << "\n=================" << "\nTotal estimate: $" << totalCost
             << " (With discount)"
             << "\nThis estimate is valid for " << days << " days" << std::endl;
+  return 0;
 }
