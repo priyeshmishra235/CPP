@@ -1,7 +1,8 @@
 #include <iostream>
 #include <vector>
 
-void print(std::vector<int> &numbers);
+void displayMenu();
+void print(const std::vector<int> &numbers);
 void addNumber(std::vector<int> &numbers);
 void clear(std::vector<int> &numbers);
 void mean(std::vector<int>);
@@ -11,42 +12,58 @@ void largest(std::vector<int>);
 int main() {
   std::vector<int> numbers{};
   char selection{};
-
   do {
-    // Display menu
-    std::cout << "\nP - Print numbers" << std::endl;
-    std::cout << "A - Add a number" << std::endl;
-    std::cout << "M - Display mean of the numbers" << std::endl;
-    std::cout << "S - Display the smallest number" << std::endl;
-    std::cout << "L - Display the largest number" << std::endl;
-    std::cout << "Q - Quit" << std::endl;
-    std::cout << "\nEnter your choice: ";
+    displayMenu();
     std::cin >> selection;
-
-    if (selection == 'P' || selection == 'p') {
-      print(numbers);
-    } else if (selection == 'A' || selection == 'a') {
-      addNumber(numbers);
-    } else if (selection == 'M' || selection == 'm') {
-      mean(numbers);
-    } else if (selection == 'S' || selection == 's') {
-      smallest(numbers);
-    } else if (selection == 'L' || selection == 'l') {
-      largest(numbers);
-    } else if (selection == 'Q' || selection == 'q') {
-      std::cout << "Goodbye" << std::endl;
-    } else if (selection == 'C' || selection == 'c') {
-      clear(numbers);
-    } else {
-      std::cout << "Unknown selection, please try again" << std::endl;
+    switch (tolower(selection)) {
+      case ('p'): {
+        print(numbers);
+        break;
+      }
+      case ('a'): {
+        addNumber(numbers);
+        break;
+      }
+      case ('c'): {
+        clear(numbers);
+        break;
+      }
+      case ('m'): {
+        mean(numbers);
+        break;
+      }
+      case ('s'): {
+        smallest(numbers);
+        break;
+      }
+      case ('l'): {
+        largest(numbers);
+        break;
+      }
+      case ('q'): {
+        std::cout << "Goodbye" << std::endl;
+        break;
+      }
+      default: {
+        std::cout << "Unknown selection. Try again.";
+        break;
+      }
     }
-  } while (selection != 'q' && selection != 'Q');
+  } while (selection != 'q');
 
   std::cout << std::endl;
   return 0;
 }
-
-void print(std::vector<int> &numbers) {
+void displayMenu() {
+  std::cout << "\nP - Print numbers" << std::endl
+            << "A - Add a number" << std::endl
+            << "M - Display mean of the numbers" << std::endl
+            << "S - Display the smallest number" << std::endl
+            << "L - Display the largest number" << std::endl
+            << "Q - Quit" << std::endl
+            << "\nEnter your choice: ";
+}
+void print(const std::vector<int> &numbers) {
   if (numbers.size() == 0)
     std::cout << "[] - the list is empty" << std::endl;
   else {
@@ -63,8 +80,12 @@ void addNumber(std::vector<int> &numbers) {
   std::cout << num_to_add << " added" << std::endl;
 }
 void clear(std::vector<int> &numbers) {
-  numbers.clear();
-  std::cout << "List elements cleared";
+  if (numbers.size() == 0)
+    std::cout << "List is already empty" << std::endl;
+  else {
+    numbers.clear();
+    std::cout << "List elements cleared";
+  }
 }
 void mean(std::vector<int> numbers) {
   if (numbers.size() == 0)
