@@ -2,33 +2,31 @@
 #include <string>
 #include <vector>
 
-using namespace std;
-
 int main() {
   int num{10};
-  cout << "Value of num is: " << num << endl;
-  cout << "sizeof of num is: " << sizeof num << endl;
-  cout << "Address of num is: " << &num << endl;
+  std::cout << "Value of num is: " << num << std::endl;
+  std::cout << "sizeof of num is: " << sizeof num << std::endl;
+  std::cout << "Address of num is: " << &num << std::endl;
 
   int *p;
-  cout << "\nValue of p is: " << p << endl;  // garbage
-  cout << "Address of p is: " << &p << endl;
-  cout << "sizeof of p is: " << sizeof p << endl;
+  std::cout << "\nValue of p is: " << p << std::endl;  // garbage
+  std::cout << "Address of p is: " << &p << std::endl;
+  std::cout << "sizeof of p is: " << sizeof p << std::endl;
 
   p = nullptr;
-  cout << "\nValue of p is: " << p << endl;
+  std::cout << "\nValue of p is: " << p << std::endl;
 
   int *p1{nullptr};
   double *p2{nullptr};
   unsigned long long *p3{nullptr};
-  vector<string> *p4{nullptr};
-  string *p5{nullptr};
+  std::vector<std::string> *p4{nullptr};
+  std::string *p5{nullptr};
 
-  cout << "\nsizeof p1 is: " << sizeof p1 << endl;
-  cout << "sizeof p2 is: " << sizeof p2 << endl;
-  cout << "sizeof p3 is: " << sizeof p3 << endl;
-  cout << "sizeof p4 is: " << sizeof p4 << endl;
-  cout << "sizeof p5 is: " << sizeof p5 << endl;
+  std::cout << "\nsizeof p1 is: " << sizeof p1 << std::endl;
+  std::cout << "sizeof p2 is: " << sizeof p2 << std::endl;
+  std::cout << "sizeof p3 is: " << sizeof p3 << std::endl;
+  std::cout << "sizeof p4 is: " << sizeof p4 << std::endl;
+  std::cout << "sizeof p5 is: " << sizeof p5 << std::endl;
 
   int score{10};
   double high_temp{100.7};
@@ -36,12 +34,12 @@ int main() {
   int *score_ptr{nullptr};
 
   score_ptr = &score;
-  cout << "Value of score is: " << score << endl;
-  cout << "Address of score is: " << &score << endl;
-  cout << "Value of score_ptr is: " << score_ptr << endl;
+  std::cout << "Value of score is: " << score << std::endl;
+  std::cout << "Address of score is: " << &score << std::endl;
+  std::cout << "Value of score_ptr is: " << score_ptr << std::endl;
 
   // score_ptr = &high_temp;     // Compiler error
 
-  cout << endl;
+  std::cout << std::endl;
   return 0;
 }

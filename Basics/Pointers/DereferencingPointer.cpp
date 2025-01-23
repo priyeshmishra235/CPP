@@ -2,49 +2,47 @@
 #include <string>
 #include <vector>
 
-using namespace std;
-
 int main() {
   int score{100};
   int *score_ptr{&score};
 
-  cout << *score_ptr << endl;  // 100
+  std::cout << *score_ptr << std::endl;  // 100
 
   *score_ptr = 200;
 
-  cout << *score_ptr << endl;  // 200
-  cout << score << endl;       // 200
+  std::cout << *score_ptr << std::endl;  // 200
+  std::cout << score << std::endl;       // 200
 
-  cout << "\n------------------------------" << endl;
+  std::cout << "\n------------------------------" << std::endl;
   double high_temp{100.7};
   double low_temp{37.4};
   double *temp_ptr{&high_temp};
 
-  cout << *temp_ptr << endl;  // 100.7
+  std::cout << *temp_ptr << std::endl;  // 100.7
   temp_ptr = &low_temp;
-  cout << *temp_ptr << endl;  // 37.4
+  std::cout << *temp_ptr << std::endl;  // 37.4
 
-  cout << "\n------------------------------" << endl;
+  std::cout << "\n------------------------------" << std::endl;
 
-  string name{"Frank"};
-  string *string_ptr{&name};
+  std::string name{"Frank"};
+  std::string *string_ptr{&name};
 
-  cout << *string_ptr << endl;  // Frank
+  std::cout << *string_ptr << std::endl;  // Frank
   name = "James";
-  cout << *string_ptr << endl;  // James
-                                //
-  cout << "\n------------------------------" << endl;
-  vector<string> stooges{"Larry", "Moe", "Curly"};
-  vector<string> *vector_ptr{nullptr};
+  std::cout << *string_ptr << std::endl;  // James
+                                          //
+  std::cout << "\n------------------------------" << std::endl;
+  std::vector<std::string> stooges{"Larry", "Moe", "Curly"};
+  std::vector<std::string> *vector_ptr{nullptr};
 
   vector_ptr = &stooges;
 
-  cout << "First stooge: " << (*vector_ptr).at(0) << endl;  // Larry
+  std::cout << "First stooge: " << (*vector_ptr).at(0) << std::endl;  // Larry
 
-  cout << "Stooges: ";
-  for (auto stooge : *vector_ptr) cout << stooge << " ";
-  cout << endl;
+  std::cout << "Stooges: ";
+  for (auto stooge : *vector_ptr) std::cout << stooge << " ";
+  std::cout << std::endl;
 
-  cout << endl;
+  std::cout << std::endl;
   return 0;
 }
