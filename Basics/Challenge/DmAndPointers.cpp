@@ -36,29 +36,72 @@
 */
 
 #include <iostream>
+#include <vector>
 
-using namespace std;
-
+int *createArray(size_t size) {
+  int *newArray{nullptr};
+  newArray = new int[size];
+  for (size_t i{0}; i < size; i++) {
+    newArray[i] = 0;
+  }
+  return newArray;
+}
+void print(const int *array, size_t size) {
+  std::cout << "[ ";
+  for (size_t i{0}; i < size; i++) {
+    std::cout << array[i] << " ";
+  }
+  std::cout << "]" << std::endl;
+}
+void input(int *array, size_t size) {
+  for (size_t i{0}; i < size; i++) {
+    std::cout << "Enter the " << i << "th element: ";
+    std::cin >> array[i];
+  }
+}
+void sizeInput(std::vector<int> &size) {
+  // void sizeInput(std::vector<int> *size) can be used
+  int element{0};
+  std::cin >> element;
+  // size->push_back(element); for changing when using pointer
+  size.push_back(element);
+}
+void product(int *array1, int *array2, int *prodArray, std::vector<int> &size) {
+  int arr3{0};
+  for (size_t arr2{0}; arr2 < size.at(1); arr2++) {
+    for (size_t arr1{0}; arr1 < size.at(0); arr1++) {
+      prodArray[arr3] = array1[arr1] * array2[arr2];
+      ++arr3;
+    }
+  }
+}
 int main() {
-  const size_t array1_size{5};
-  const size_t array2_size{3};
+  int *array1{nullptr}, *array2{nullptr}, *prodArray{nullptr};
+  std::vector<int> size{};
 
-  int array1[]{1, 2, 3, 4, 5};
-  int array2[]{10, 20, 30};
+  std::cout << "Enter size of array1: ";
+  sizeInput(size);
+  // sizeInput(&size);
+  array1 = createArray(size.at(0));
+  std::cout << "Enter the elements of array1" << std::endl;
+  input(array1, size.at(0));
+  print(array1, size.at(0));
 
-  cout << "Array 1: ";
-  print(array1, array1_size);
+  std::cout << "Enter size of array2: ";
+  sizeInput(size);
+  array2 = createArray(size.at(1));
+  std::cout << "Enter the elements of array2" << std::endl;
+  input(array1, size.at(1));
+  print(array1, size.at(1));
 
-  cout << "Array 2: ";
-  print(array2, array2_size);
+  std::cout << "Product Array: ";
+  size.push_back(size.at(0) * size.at(1));
+  prodArray = createArray(size.at(2));
+  print(prodArray, size.at(2));
+  product(array1, array2, prodArray, size);
+  print(prodArray, size.at(2));
 
-  int *results = apply_all(array1, array1_size, array2, array2_size);
-  constexpr size_t results_size{array1_size * array2_size};
-
-  cout << "Result: ";
-  print(results, results_size);
-
-  cout << endl;
+  delete[] array1, array2, prodArray;
 
   return 0;
 }
