@@ -11,7 +11,7 @@ class SubjectDetails {
   float subjectMarks{0}, subjectMarksSet{0};
   float subjectAllMarks{0}, subjectAllMarksSet{0};
   float subjectPercentage{0}, subjectPercentageSet{0};
-  float totalPercentage{0}, totalPercentageSet{0};
+  // float totalPercentage{0}, totalPercentageSet{0};
 
  public:
   // constructor
