@@ -1,0 +1,40 @@
+% todo
+  x things i have done
+  - things that i need to do
+  ? things that i have considered but i am not sure about
+  ~ things that are partially done but require some external force before being completed
+  ! things that are important
+  !! things that are urgent
+
+% To Do-
+  x 1.Add a class which contains details such as: // attributes: string subject name, string subject code, int subject credit, int subject total marks,
+  x   int subject marks got,int percentage,int subject credit got.
+  x 3.Add a class which contains: //attributes: string student name, string batch name,string department .
+
+  x 2.Implement method subject details in a different file
+      x store all them in subject details vector
+
+  x 4.Implement methods student details methods in a different file
+          x store in vectors
+
+  - MAIN FUNCTION TASKS:
+    x 1. Add Multiple Subjects for a Student
+    - 2. Calculate Total Credits Earned
+    - 3. Calculate Average Percentage for a Student
+    - 4. Display All Subject Details for a Student
+    - 5. Modify Subject Details:
+    - 6. Search for a Subject by Subject Code:
+    - 7. Remove a Subject from the Students List
+    - 8. Display Students Overall Performance:
+          "Excellent" for percentages above 80%
+          "Good" for percentages between 60% and 80%
+          "Needs Improvement" for percentages below 60%
+    - 11. Sort Subjects by Marks Obtained:
+    - 12. Sort Subjects by Credit Hours:
+    ? 13. Check if Student Passed All Subjects:
+    ? 14. Generate a Transcript Report for a Student:
+    ? 15. Validate Input Data:
+    ? 16. View All Students Performance in a Department:
+    ? 17. Batch-wise Student Performance Summary:
+    ? 18. Display Top Performing Student in a Batch:
+    ? 19. Display Students Subject-wise Performance:
