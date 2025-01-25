@@ -14,10 +14,6 @@ void SubjectDetails::setSubCreditGot(int creditGot) {
   std::cout << "Subject credit modified" << std::endl;
 }
 
-void SubjectDetails::setSubAllMarksGot(int subAllMarks) {
-  subjectAllMarks = subAllMarks;
-  std::cout << "Total marks Got , modified" << std::endl;
-}
 void SubjectDetails::setSubMarksGot(int subMarkGot) {
   subjectMarks = subMarkGot;
   std::cout << "This subject marks modified" << std::endl;
@@ -27,7 +23,13 @@ void SubjectDetails::setSubPercentGot(int subPer) {
   subjectPercentage = subPer;
   std::cout << "This subject percentage, modified" << std::endl;
 }
-void SubjectDetails::setTotPercent(int TotPer) {
-  totalPercentage = TotPer;
-  std::cout << "Total percentage modified" << std::endl;
-}
+
+// void SubjectDetails::setSubAllMarksGot(int subAllMarks) {
+//   subjectAllMarks = subAllMarks;
+//   std::cout << "Total marks Got , modified" << std::endl;
+// }
+
+// void SubjectDetails::setTotPercent(int TotPer) {
+//   totalPercentage = TotPer;
+//   std::cout << "Total percentage modified" << std::endl;
+// }

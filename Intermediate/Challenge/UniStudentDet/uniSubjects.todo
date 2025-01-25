@@ -18,23 +18,24 @@
           x store in vectors
 
   - MAIN FUNCTION TASKS:
-    x 1. Add Multiple Subjects for a Student
-    - 2. Calculate Total Credits Earned
-    - 3. Calculate Average Percentage for a Student
-    - 4. Display All Subject Details for a Student
-    - 5. Modify Subject Details:
-    - 6. Search for a Subject by Subject Code:
-    - 7. Remove a Subject from the Students List
-    - 8. Display Students Overall Performance:
-          "Excellent" for percentages above 80%
-          "Good" for percentages between 60% and 80%
-          "Needs Improvement" for percentages below 60%
-    - 11. Sort Subjects by Marks Obtained:
-    - 12. Sort Subjects by Credit Hours:
-    ? 13. Check if Student Passed All Subjects:
-    ? 14. Generate a Transcript Report for a Student:
-    ? 15. Validate Input Data:
-    ? 16. View All Students Performance in a Department:
-    ? 17. Batch-wise Student Performance Summary:
-    ? 18. Display Top Performing Student in a Batch:
-    ? 19. Display Students Subject-wise Performance:
+    x        << "1. Add student details\n"
+    x        << "2. Add subject details\n"
+    x        << "3. Display student details\n"
+    x        << "4. Display subject details\n"
+            << "5. Delete student details\n"
+            << "6. Delete subject details\n"
+            << "7. Search student details\n"
+            << "8. Search subject details\n"
+            << "9. Modify student details\n"
+            << "10. Modify subject details\n"
+            << "11. Student performance\n"
+            << "12. Sort subjects by marks\n"
+            << "13. Sort subjects by credits\n"
+            << "14. Sort subjects by percentage\n"
+            << "15. Sort students by marks\n"
+            << "16. Sort students by credits\n"
+            << "17. Sort students by percentage\n"
+            << "18. Department performance\n"
+            << "19. Batch performance\n"
+            << "20. Top 5 students of batch\n"
+            << "21. Top 5 students of department\n"
