@@ -2,6 +2,7 @@
 
 #include "BatchDetails.h"
 #include "SubjectDetails.h"
+#include "mappingDatabase.h"
 std::vector<SubjectDetails> subjects;
 std::vector<BatchDetails> batchInfo;
 
@@ -32,7 +33,7 @@ void choiceInfo() {
 }
 void addStudentDetails() {
   std::string studName, batch, department;
-  int rollNum;
+  unsigned long long int rollNum;
 
   std::cout << "Enter Student Name: ";
   std::getline(std::cin, studName);
@@ -108,9 +109,14 @@ int main() {
         break;
       }
       case 4: {
+        displaySubjectDetails();
         break;
       }
       case 5: {
+        unsigned long long int rollNum55;
+        std::cout << "Enter roll number of student to be deleted: ";
+        std::cin >> rollNum55;
+        removeStudentDetails(rollNum55);
         break;
       }
       case 6: {
