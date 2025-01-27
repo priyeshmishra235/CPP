@@ -49,4 +49,3 @@
 - Handle edge cases:
   - Adding a movie whose name already exists should display an **error message** to the user.
   - Incrementing the watched count for a movie that does not exist should also display an **error message**.
-- This program is a good challenge for **beginning C++ programmers**—have fun and enjoy coding! 🎉
