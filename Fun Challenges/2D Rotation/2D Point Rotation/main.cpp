@@ -1,23 +1,12 @@
-#include <windows.h>
+#include <unistd.h>
 
 #include <chrono>
 #include <cmath>
 #include <iostream>
-#include <thread>
 const double pi{3.141592653589793};
 const int centreX{31};
 const int centreY{13};
 const int radius{15};
-void clearScreen() {
-  COORD coord = {0, 0};
-  DWORD count;
-  CONSOLE_SCREEN_BUFFER_INFO csbi;
-  HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
-  GetConsoleScreenBufferInfo(h, &csbi);
-  FillConsoleOutputCharacter(h, ' ', csbi.dwSize.X * csbi.dwSize.Y, coord,
-                             &count);
-  SetConsoleCursorPosition(h, coord);
-}
 void drawBorder(int xAxis, int yAxis) {
   if (xAxis == 0 || xAxis == centreX * 2 - 1)
     std::cout << "|";
@@ -36,7 +25,7 @@ void drawAxes(int xAxis, int yAxis) {
 }
 int main() {
   for (int angle{0};; angle += 5) {
-    clearScreen();
+    std::system("CLS");
     double radian{(angle * pi) / 180};
     for (int yAxis{0}; yAxis < centreY * 2; yAxis++) {
       for (int xAxis{0}; xAxis < centreX * 2; xAxis++) {
@@ -50,7 +39,7 @@ int main() {
       }
       std::cout << "\n";
     }
-    std::this_thread::sleep_for(std::chrono::milliseconds(10));
+    usleep(50000);
   }
   return 0;
 }
