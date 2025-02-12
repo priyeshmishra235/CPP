@@ -7,5 +7,3 @@
 #include "Game.h"
 #include "Games.cpp"
 #include "Games.h"
-#include "ioFunctions.cpp"
-#include "ioFunctions.h"

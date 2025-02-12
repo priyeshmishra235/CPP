@@ -1,6 +1,11 @@
 #include "Game.h"
 
-void Game::setTitle(char getTitle) { *title = getTitle; }
+void Game::setTitle(char *input) {
+  input = new char[30];
+  std::cout << "Enter the title: ";
+  std::cin.getline(input, 30);
+  title = input;
+}
 void Game::setGenre(std::string getGenre) { genre = getGenre; };
 void Game::setRating(int getRating) { rating = getRating; }
 void Game::setHoursPlayed(int getHoursPlayed) { hoursPlayed = getHoursPlayed; }
@@ -49,6 +54,6 @@ Game &Game::operator=(Game &&rhs) {
   return *this;
 }
 Game::~Game() {
-  std::cout << "Destructor called";
+  std::cout << "Destructor called\n";
   delete[] title;
 }
