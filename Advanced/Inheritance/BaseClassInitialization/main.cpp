@@ -11,7 +11,6 @@ class Base {
   }
   ~Base() { std::cout << "Base destructor" << std::endl; }
 };
-
 class Derived : public Base {
  private:
   int doubled_value;

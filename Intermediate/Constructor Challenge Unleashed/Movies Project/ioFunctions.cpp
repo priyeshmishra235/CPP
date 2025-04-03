@@ -8,8 +8,8 @@
 std::string trim(const std::string &str) {
   // Find the first non-whitespace character
   size_t start = str.find_first_not_of(" \t\n\r");
-  if (start == std::string::npos)  // If no non-whitespace characters, return
-                                   // empty string
+  if (start == std::string::npos) // If no non-whitespace characters, return
+                                  // empty string
     return "";
   // Find the last non-whitespace character
   size_t end = str.find_last_not_of(" \t\n\r");

@@ -45,7 +45,8 @@ void renderer(const std::vector<point3d> &points) {
   for (auto &p : points) {
     int x{static_cast<int>(p.x + width / 2)};
     int y{static_cast<int>(p.y + height / 2)};
-    if (x >= 0 && x < width && y >= 0 && y < height) buffer[y][x] = '*';
+    if (x >= 0 && x < width && y >= 0 && y < height)
+      buffer[y][x] = '*';
   }
   // step 3. display the buffer
   for (int i{0}; i < height; i++) {

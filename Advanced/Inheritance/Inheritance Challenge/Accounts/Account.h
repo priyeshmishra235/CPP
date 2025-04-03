@@ -1,5 +1,5 @@
-#ifndef ACCOUNT H
-#define ACCOUNT H
+#ifndef ACCOUNT
+#define ACCOUNT
 #include <iostream>
 #include <string>
 class Account {

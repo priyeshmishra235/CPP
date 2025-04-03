@@ -1,13 +1,12 @@
 #include <iostream>
+#include <string>
 int main() {
   // alphabet and key
-  std::string charSet{
-      " !#$%&'()*+,-./"
-      "0123456789:\";<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`"
-      "abcdefghijklmnopqrstuvwxyz{|}~"};
-  std::string key{
-      "W&h93q@Pa#->x8U]XI}s_fOH0wTm?<$=ZA7BEn,{/"
-      ";*~o%Yj`MD[plc 'dQgKu|\"RtiC)ze(:1k.V6NGL5ry+2bv!FS4^J"};
+  std::string charSet{" !#$%&'()*+,-./"
+                      "0123456789:\";<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`"
+                      "abcdefghijklmnopqrstuvwxyz{|}~"};
+  std::string key{"W&h93q@Pa#->x8U]XI}s_fOH0wTm?<$=ZA7BEn,{/"
+                  ";*~o%Yj`MD[plc 'dQgKu|\"RtiC)ze(:1k.V6NGL5ry+2bv!FS4^J"};
 
   // getting message input
   std::cout << "Enter the message you want to encrypt!: \n";
