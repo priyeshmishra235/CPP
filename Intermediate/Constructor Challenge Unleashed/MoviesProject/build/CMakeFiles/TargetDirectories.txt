@@ -1,0 +1,6 @@
+/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/build/CMakeFiles/edit_cache.dir
+/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/build/CMakeFiles/rebuild_cache.dir
+/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/build/src/CMakeFiles/MoviesProjectLib.dir
+/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/build/src/CMakeFiles/MoviesProjectApp.dir
+/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/build/src/CMakeFiles/edit_cache.dir
+/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/build/src/CMakeFiles/rebuild_cache.dir

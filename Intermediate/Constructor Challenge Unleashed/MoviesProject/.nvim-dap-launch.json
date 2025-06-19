@@ -1,0 +1,9 @@
+{
+  "type": "codelldb",
+  "request": "launch",
+  "name": "Launch /home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/build/bin/MoviesProjectApp",
+  "program": "/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/build/bin/MoviesProjectApp",
+  "args": [],
+  "cwd": "/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject",
+  "stopOnEntry": false
+}

@@ -1,0 +1,30 @@
+Checks: >
+  clang-analyzer-*,
+  bugprone-*,
+  cppcoreguidelines-*,
+  modernize-*,
+  performance-*,
+  readability-*,
+  -hicpp-*,
+  -fuchsia-*,
+  -google-*,
+  -llvm-*,
+  -cert-*,
+  -portability-*,
+  -misc-non-private-member-variables-in-classes
+
+HeaderFilterRegex: 'src/.*'  # Change to your actual source directory
+
+HeaderFilterRegex: ''
+
+FormatStyle: file
+
+CheckOptions:
+  - { key: modernize-use-nullptr.NullMacros, value: 'NULL' }
+  - { key: modernize-use-auto.MinTypeNameLength, value: '5' }
+  - { key: modernize-loop-convert.MinConfidence, value: reasonable }
+  - { key: cppcoreguidelines-init-variables.StrictMode, value: true }
+  - { key: cppcoreguidelines-avoid-magic-numbers.IgnoredValues, value: '0,1,-1,2' }
+
+Language: C++
+Standard: c++20

@@ -17,7 +17,7 @@ void display(std::vector<std::vector<int>> &vec) {
     for (int val : row) {
       std::cout << val << " ";
     }
-    std::cout << std::endl;
+         std::cout << std::endl;
   }
 }
 int main() {

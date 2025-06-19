@@ -1,0 +1,7 @@
+# ninja log v6
+2	899	1750274590167202072	src/CMakeFiles/MoviesProjectLib.dir/Movie.cpp.o	94bec0b3e5a3e8da
+4	1458	1750274590169202073	src/CMakeFiles/MoviesProjectLib.dir/utils/ioFunctions.cpp.o	d8ae027e64102e38
+4	1462	1750274590170926257	src/CMakeFiles/MoviesProjectApp.dir/main.cpp.o	1d16f1273488e84e
+3	1549	1750274590168202072	src/CMakeFiles/MoviesProjectLib.dir/Movies.cpp.o	4eeddeddae876572
+1549	1617	1750274591714203410	src/libMoviesProjectLib.a	de5a117694f5c70
+1617	1794	1750274591782203469	bin/MoviesProjectApp	901d5359fad1edfc

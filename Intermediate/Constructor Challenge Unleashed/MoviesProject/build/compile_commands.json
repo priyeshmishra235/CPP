@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/build",
+  "command": "/usr/bin/clang++ -I\"/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/include\" -g -std=gnu++20 -Wall -Wextra -Wpedantic -o src/CMakeFiles/MoviesProjectLib.dir/Movie.cpp.o -c \"/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/src/Movie.cpp\"",
+  "file": "/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/src/Movie.cpp",
+  "output": "src/CMakeFiles/MoviesProjectLib.dir/Movie.cpp.o"
+},
+{
+  "directory": "/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/build",
+  "command": "/usr/bin/clang++ -I\"/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/include\" -g -std=gnu++20 -Wall -Wextra -Wpedantic -o src/CMakeFiles/MoviesProjectLib.dir/Movies.cpp.o -c \"/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/src/Movies.cpp\"",
+  "file": "/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/src/Movies.cpp",
+  "output": "src/CMakeFiles/MoviesProjectLib.dir/Movies.cpp.o"
+},
+{
+  "directory": "/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/build",
+  "command": "/usr/bin/clang++ -I\"/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/include\" -g -std=gnu++20 -Wall -Wextra -Wpedantic -o src/CMakeFiles/MoviesProjectLib.dir/utils/ioFunctions.cpp.o -c \"/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/src/utils/ioFunctions.cpp\"",
+  "file": "/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/src/utils/ioFunctions.cpp",
+  "output": "src/CMakeFiles/MoviesProjectLib.dir/utils/ioFunctions.cpp.o"
+},
+{
+  "directory": "/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/build",
+  "command": "/usr/bin/clang++ -I\"/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/include\" -g -std=gnu++20 -Wall -Wextra -Wpedantic -o src/CMakeFiles/MoviesProjectApp.dir/main.cpp.o -c \"/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/src/main.cpp\"",
+  "file": "/home/priyeshmishra/CodeBase/C++/Intermediate/Constructor Challenge Unleashed/MoviesProject/src/main.cpp",
+  "output": "src/CMakeFiles/MoviesProjectApp.dir/main.cpp.o"
+}
+]

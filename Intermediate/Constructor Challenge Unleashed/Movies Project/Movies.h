@@ -4,10 +4,10 @@
 #include "Movie.h"
 
 class Movies {
- private:
+private:
   std::vector<Movie> movies;
 
- public:
+public:
   Movies();
   ~Movies();
   bool addMovie(std::string movieName, std::string movieRating,

@@ -1,0 +1,99 @@
+---
+# Base style (choose: LLVM, Google, Chromium, Mozilla, WebKit)
+BasedOnStyle: LLVM
+
+# Indentation & Formatting
+IndentWidth: 2                 # Number of spaces for indentation
+TabWidth: 2                     # Number of spaces per tab
+UseTab: Never                    # Options: Always, Never, ForIndentation, ForContinuationAndIndentation
+IndentCaseLabels: true           # Indent `case` labels in `switch`
+IndentGotoLabels: false          # Whether to indent goto labels
+ContinuationIndentWidth: 4       # Indentation for line continuations
+AccessModifierOffset: -2         # Indentation for `public`, `private`, `protected`
+
+# Braces & Blocks
+BreakBeforeBraces: Attach        # Options: Attach, Linux, Mozilla, Stroustrup, Allman
+BreakBeforeInheritanceComma: false
+BraceWrapping:
+  AfterClass: true
+  AfterControlStatement: false
+  AfterFunction: false
+  AfterNamespace: false
+  AfterStruct: true
+  AfterUnion: true
+  BeforeCatch: false
+  BeforeElse: false
+  IndentBraces: true
+
+# Line Length
+ColumnLimit: 100                 # Max characters per line
+AllowShortFunctionsOnASingleLine: Empty  # Options: None, Inline, Empty, All
+AllowShortBlocksOnASingleLine: Empty
+AllowShortLoopsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
+BreakConstructorInitializers: BeforeColon
+BreakBeforeBinaryOperators: None  # Options: None, NonAssignment, All
+BreakBeforeTernaryOperators: true
+BreakStringLiterals: true
+
+# Pointer & Reference Alignment
+PointerAlignment: Right          # Options: Left, Right, Middle
+ReferenceAlignment: Pointer
+SpaceBeforeParens: ControlStatements  # Options: Always, Never, ControlStatements
+SpaceAfterCStyleCast: false
+SpaceBeforeRangeBasedForLoopColon: true
+SpacesInParentheses: false
+SpacesInConditionalStatement: false
+SpacesBeforeTrailingComments: 1
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: false
+
+# Alignment & Spacing
+AlignAfterOpenBracket: Align
+AlignOperands: true
+AlignTrailingComments: true
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+AlignEscapedNewlines: Left
+AllowAllArgumentsOnNextLine: false
+AllowAllParametersOfDeclarationOnNextLine: false
+BinPackParameters: true
+BinPackArguments: true
+
+# Namespace & Includes
+NamespaceIndentation: All
+FixNamespaceComments: true
+SortIncludes: true
+IncludeBlocks: Preserve  # Options: Preserve, Merge, Regroup
+IncludeIsMainRegex: "(Test)?$"
+
+# Function Declarations
+AlwaysBreakTemplateDeclarations: Yes
+AlwaysBreakAfterReturnType: None  # Options: None, All, TopLevel
+BreakBeforeFunctionDeclarationReturnType: All
+
+# Loops & Conditionals
+BreakBeforeForLoopOperators: true
+BreakBeforeWhileLoopOperators: true
+BreakBeforeIfStatementOperators: true
+
+# Operators
+SpacesInAngles: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeColon: false
+SpaceAfterColon: true
+SpaceBeforeComma: false
+SpaceAfterComma: true
+
+# Comments
+ReflowComments: true
+CommentPragmas: '^@|^TODO|^FIXME'
+
+# Miscellaneous
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 2
+RemoveBracesLLVM: false
+EmptyLineBeforeAccessModifier: Always
+Cpp11BracedListStyle: true
+SortUsingDeclarations: true
+TrailingWhitespace: true
