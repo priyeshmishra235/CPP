@@ -6,13 +6,13 @@
 #include <string>
 #include <vector>
 class Game {
- private:
+private:
   char *title;
   std::string genre{};
   int rating{};
   int hoursPlayed{};
 
- public:
+public:
   char getTitle() const { return *title; }
   std::string getGenre() const { return genre; }
   int getRating() const { return rating; }

@@ -36,12 +36,14 @@ void display(std::string s1, std::string s2) {
 }
 void display(std::vector<std::string> s) {
   std::cout << "Vector string: ";
-  for (auto c : s) std::cout << c << " ";
+  for (auto c : s)
+    std::cout << c << " ";
   std::cout << std::endl;
 }
 void display(std::vector<int> v) {
   std::cout << "vector integer: ";
-  for (auto i : v) std::cout << i;
+  for (auto i : v)
+    std::cout << i;
   std::cout << std::endl;
 }
 
@@ -49,14 +51,14 @@ int main() {
   display(100);
   display(500, -34);
   display(-234.452);
-  display(43.34F);  // since no float fxn, will be converted to double
+  display(43.34F); // since no float fxn, will be converted to double
   display(77.264, 46.21);
   display(-946.258, -63.56F);
-  display(56.15F, 76.103);     // ambiguous b/c should convert first float to
-                               // double or double one to float
-  display(46.154F, 657.355F);  // same for this too
+  // display(56.15F, 76.103); // ambiguous b/c should convert first float to
+  // double or double one to float
+  display(46.154F, 657.355F); // same for this too
 
-  display("c-style string");  // will be converted to c++ style string
+  display("c-style string"); // will be converted to c++ style string
   std::string s{"c++ style string"};
   display(s);
 

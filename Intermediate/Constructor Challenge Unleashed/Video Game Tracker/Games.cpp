@@ -81,7 +81,8 @@ void Games::displayGames() {
 }
 std::string trim(const std::string &str) {
   size_t start = str.find_first_not_of(" \t\n\r");
-  if (start == std::string::npos) return "";
+  if (start == std::string::npos)
+    return "";
   size_t end = str.find_last_not_of(" \t\n\r");
   return str.substr(start, end - start + 1);
 }
@@ -100,7 +101,7 @@ int gameRatingInput() {
   do {
     std::cout << "Enter Movie Rating (1-10): ";
     std::cin >> getGameRating;
-  } while (isalnum(getGameRating) && 1 <= getGameRating <= 10);
+  } while (isalnum(getGameRating) && getGameRating >= 1 && getGameRating <= 10);
   return getGameRating;
 }
 std::string gameGenreInput() {

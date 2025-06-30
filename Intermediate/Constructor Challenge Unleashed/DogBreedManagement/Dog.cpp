@@ -1,6 +1,5 @@
 #include "Dog.h"
 
-#include <iostream>
 #include <string>
 
 void Dog::setName(std::string name) { dogName = name; }

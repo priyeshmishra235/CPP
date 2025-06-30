@@ -4,15 +4,16 @@ void print_array(const int arr[], size_t size);
 void set_array(int arr[], size_t size, int value);
 
 void print_array(const int arr[],
-                 size_t size) {  // const: now this fxn cannot change array
-  for (size_t i{0}; i < size; ++i) std::cout << arr[i] << " ";
+                 size_t size) { // const: now this fxn cannot change array
+  for (size_t i{0}; i < size; ++i)
+    std::cout << arr[i] << " ";
   std::cout << std::endl;
   // arr[0] = 50000; // bug
 }
-
 // set each array element to value
 void set_array(int arr[], size_t size, int value) {
-  for (size_t i{0}; i < size; ++i) arr[i] = value;
+  for (size_t i{0}; i < size; ++i)
+    arr[i] = value;
 }
 
 int main() {

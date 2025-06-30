@@ -4,11 +4,11 @@
 
 ### **Core Implementation**
 
-- [x] **Implement the `Game` class with:**
-  - [x] **Use a C-style string (`char*`) for `title`** to practice deep copy.
-  - [x] Use `std::string` for `genre`.
-  - [x] Use `int` for `rating` (1-10).
-  - [x] Use `int` for `hoursPlayed`.
+- [ ] **Implement the `Game` class with:**
+  - [ ] **Use a C-style string (`char*`) for `title`** to practice deep copy.
+  - [ ] Use `std::string` for `genre`.
+  - [ ] Use `int` for `rating` (1-10).
+  - [ ] Use `int` for `hoursPlayed`.
 
 - [ ] **Implement the following in `Game` class:**
   - [ ] **Copy Constructor (Deep Copy)**

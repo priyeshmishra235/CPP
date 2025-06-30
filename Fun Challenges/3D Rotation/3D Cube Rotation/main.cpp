@@ -85,18 +85,16 @@ void projectSurface(float cubeX, float cubeY, float cubeZ, int ch) {
 }
 
 int main() {
-  // Clear the screen using ANSI escape code
   printf("\x1b[2J");
 
   while (1) {
-    // Reset buffers for each frame
+    // Reset the buffers for each frame
     memset(frameBuffer, backgroundChar, screenWidth * screenHeight);
     memset(depthBuffer, 0, screenWidth * screenHeight * sizeof(float));
 
     float cubeSize = 20;              // Defines the size of the cube
     horizontalOffset = -2 * cubeSize; // Adjust horizontal positioning
 
-    // Iterate over the cube's surfaces
     for (float cubeX = -cubeSize; cubeX < cubeSize; cubeX += stepSize) {
       for (float cubeY = -cubeSize; cubeY < cubeSize; cubeY += stepSize) {
         // Call function for each surface of the cube
@@ -109,20 +107,16 @@ int main() {
       }
     }
 
-    // Move cursor to top-left to redraw the frame
     printf("\x1b[H");
 
-    // Print buffer to screen, ensuring newline at row start
     for (int k = 0; k < screenWidth * screenHeight; k++) {
       putchar(k % screenWidth ? frameBuffer[k] : 10);
     }
 
-    // Rotate the cube incrementally
     rotationX += 0.05;
     rotationY += 0.05;
     rotationZ += 0.01;
 
-    // Introduce delay to control animation speed
     usleep(16000);
   }
   return 0;

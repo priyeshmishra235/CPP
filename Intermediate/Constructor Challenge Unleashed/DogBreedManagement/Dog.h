@@ -1,17 +1,17 @@
 #ifndef _DOG_H_
 #define _DOG_H_
+#include <iostream>
 #include <string>
-
 class Dog {
   // attributes
- private:
+private:
   std::string dogBreed{};
   std::string dogName{};
   double dogPrice{0};
   int dogAge{0};
 
   // methods
- public:
+public:
   void setName(std::string name);
   std::string getName();
 

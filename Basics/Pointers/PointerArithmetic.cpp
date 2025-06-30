@@ -11,7 +11,8 @@ int main() {
 
   std::cout << "\n-------------------------" << std::endl;
   score_ptr = scores;
-  while (*score_ptr != -1) std::cout << *score_ptr++ << std::endl;
+  while (*score_ptr != -1)
+    std::cout << *score_ptr++ << std::endl;
 
   std::cout << "\n-------------------------" << std::endl;
   std::string s1{"Frank"};
@@ -23,15 +24,14 @@ int main() {
   std::string *p3{&s1};
 
   std::cout << std::boolalpha;
-  std::cout << p1 << "==" << p2 << ": " << (p1 == p2) << std::endl;  // false
-  std::cout << p1 << "==" << p3 << ": " << (p1 == p3) << std::endl;  // true
+  std::cout << p1 << "==" << p2 << ": " << (p1 == p2) << std::endl; // false
+  std::cout << p1 << "==" << p3 << ": " << (p1 == p3) << std::endl; // true
 
-  std::cout << *p1 << "==" << *p2 << ": " << (*p1 == *p2) << std::endl;  // true
-  std::cout << *p1 << "==" << *p3 << ": " << (*p1 == *p3) << std::endl;  // true
+  std::cout << *p1 << "==" << *p2 << ": " << (*p1 == *p2) << std::endl; // true
+  std::cout << *p1 << "==" << *p3 << ": " << (*p1 == *p3) << std::endl; // true
 
-  p3 = &s3;  // point to James
-  std::cout << *p1 << "==" << *p3 << ": " << (*p1 == *p3)
-            << std::endl;  // false
+  p3 = &s3; // point to James
+  std::cout << *p1 << "==" << *p3 << ": " << (*p1 == *p3) << std::endl; // false
 
   std::cout << "\n-------------------------" << std::endl;
   char name[]{"Frank"};
@@ -39,8 +39,8 @@ int main() {
   char *char_ptr1{nullptr};
   char *char_ptr2{nullptr};
 
-  char_ptr1 = &name[0];  // F
-  char_ptr2 = &name[3];  // n
+  char_ptr1 = &name[0]; // F
+  char_ptr2 = &name[3]; // n
 
   std::cout << "In the std::string " << name << ",  " << *char_ptr2 << " is "
             << (char_ptr2 - char_ptr1) << " characters away from " << *char_ptr1

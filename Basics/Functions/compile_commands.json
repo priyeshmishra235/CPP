@@ -1,0 +1,17 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-std=c++20",
+      "-Wall",
+      "-O2",
+      "-c",
+      "-o",
+      "PassArrayInFxn.cpp",
+      "PassArrayInFxn.cpp"
+    ],
+    "directory": "/home/priyeshmishra/CodeBase/C++/Basics/Functions",
+    "file": "/home/priyeshmishra/CodeBase/C++/Basics/Functions/PassArrayInFxn.cpp",
+    "output": "/home/priyeshmishra/CodeBase/C++/Basics/Functions/PassArrayInFxn.cpp"
+  }
+]

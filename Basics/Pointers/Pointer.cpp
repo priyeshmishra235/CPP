@@ -8,8 +8,8 @@ int main() {
   std::cout << "sizeof of num is: " << sizeof num << std::endl;
   std::cout << "Address of num is: " << &num << std::endl;
 
-  int *p;
-  std::cout << "\nValue of p is: " << p << std::endl;  // garbage
+  int *p = &num;
+  std::cout << "\nValue of p is: " << p << std::endl; // garbage
   std::cout << "Address of p is: " << &p << std::endl;
   std::cout << "sizeof of p is: " << sizeof p << std::endl;
 
